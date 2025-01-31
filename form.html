@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <a href="form.html">Home</a>
+    <a href="task.html">View Tasks</a>
+    <h1>Add a Task</h1>
+    <form action="add_task.php" method="post">
+      <label for="task"></label>
+      <input type="text" name="task" id="task" />
+      <input type="submit" value="Add Task" /> <br />
+
+      <title>Description</title>
+      <h1>Description</h1>
+      <label for="description"></label>
+      <textarea
+        input="description"
+        name="description"
+        id="description"
+      ></textarea>
+      <br />
+
+      <title>Category</title>
+      <h1>Category</h1>
+      <label for="category"></label>
+      <input for="category" name="category" id="category" /> <br />
+
+      <h3>Priority Level</h3>
+      <select name="Priority Level">
+        <option value="None">None</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <br />
+      <h3>Progress Level</h3>
+      <select name="Progress Level">
+        <option value="None">None</option>
+        <option value="To Do">To Do</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+      </select>
+      <br />
+      <input type="submit"></submit>
+    </form>
+  </body>
+</html>
